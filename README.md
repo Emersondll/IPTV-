@@ -11,6 +11,12 @@ Aplicação web estática, pensada para TVs, que apresenta canais da Pluto TV e 
 - Busca de canais e controles para avançar, voltar e trocar de canal durante a reprodução.
 - Atalhos para Plex e Pluto TV.
 
+## Tecnologias
+
+- HTML5, CSS3 e JavaScript puro (sem frameworks nem build step)
+- [hls.js](https://github.com/video-dev/hls.js/) para reprodução de streams HLS (`.m3u8`) em navegadores sem suporte nativo
+- Listas de canais no formato M3U, consumidas via `fetch` em tempo de execução
+
 ## Como executar
 
 Não há dependências nem etapa de compilação. Sirva a pasta por HTTP e abra a página no navegador:
@@ -41,8 +47,10 @@ As listas são buscadas em tempo de execução. Portanto, disponibilidade, catá
 
 ```text
 .
-├── index.html  # Aplicação, estilos, hls.js incorporado e lógica de interface
-└── README.md   # Esta documentação
+├── index.html                      # Aplicação principal, estilos, hls.js incorporado e lógica de interface
+├── pluto_tv_brasil_player.html     # Player alternativo, focado apenas nos canais da Pluto TV Brasil
+├── docs/images/                    # Screenshot usado neste README
+└── README.md                       # Esta documentação
 ```
 
 ## Aviso
