@@ -48,3 +48,7 @@ As listas são buscadas em tempo de execução. Portanto, disponibilidade, catá
 ## Aviso
 
 Use apenas streams públicos ou para os quais você possua autorização. O projeto não hospeda, controla nem garante o conteúdo fornecido pelas playlists externas.
+
+## Screenshot
+
+![Tela principal do Pluto IPTV](docs/images/tela-principal.png)
